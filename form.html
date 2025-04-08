@@ -4,13 +4,28 @@
         <title>User Profile Form</title>
         <!-- CSS file -->
         <link rel="stylesheet" href="style.css">
-
+        <style>
+            .view-btn {
+                background-color: #4ac07f;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            
+            .view-btn:hover {
+                background-color: #ff5e70;
+            }
+        </style>
     </head>
     <body>
         <div class="form-container">
             <h2>User Profile Form</h2>
-            
-            <!-- Add PHP file -->
             <form action="push.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name">
@@ -33,11 +48,14 @@
                 </div>
                 <button type="submit" class="submit-btn">Submit</button>
             </form>
+            
+            <!-- New View Users Button -->
+            <a href="view.php" class="view-btn">View</a>
         </div>
         
-        <p> &#169 All rights reserved by sabujcdaas.</p>
+        <p> &#169; All rights reserved by CITI.</p>
         
-        <!-- JavaScript file to Toggle Address -->
+        <!-- JavaScript to Toggle Address -->
         <script src="script.js"></script>
     </body>
 </html>

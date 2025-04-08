@@ -1,5 +1,5 @@
 <?php
-    $connect = mysqli_connect("localhost", "root", "", "try");
+    $connect = mysqli_connect("localhost", "root", "", "demo_site");
 
     // Check connection
     if (!$connect) {
